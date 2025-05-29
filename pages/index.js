@@ -84,7 +84,7 @@ export default function HomePage() {
             Your AI-powered nutrition companion.
           </p>
           <p className="text-md sm:text-lg text-slate-500">
-            NutriSnap's food scanner engine is <strong className="text-green-600">93.7% accurate</strong> according to our tests.
+            NutriSnap&apos;s food scanner engine is <strong className="text-green-600">93.7% accurate</strong> according to our tests.
           </p>
         </header>
 
@@ -97,7 +97,7 @@ export default function HomePage() {
             {/* This text remains in its original position as the button is now floating */}
             {!showInstallButton && (
                  <p className="text-sm text-slate-500 mb-4">
-                   (App can be installed via your browser's 'Add to Home Screen' option if available)
+                   (App can be installed via your browser&apos;s &apos;Add to Home Screen&apos; option if available)
                  </p>
             )}
              {/* Placeholder for where the button used to be, if needed for layout, or remove this div */}

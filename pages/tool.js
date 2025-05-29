@@ -234,7 +234,7 @@ export default function ToolPage() {
         <div className="min-h-screen bg-slate-50 text-slate-800 p-4 sm:p-6 flex flex-col items-center justify-center font-inter text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-green-600 mb-4">Limit Reached! 😮</h1>
           <p className="text-lg text-slate-600 mb-6">
-            You've used your {MAX_FREE_USES} free analyses. Thanks for trying out NutriSnap!
+            You&apos;ve used your {MAX_FREE_USES} free analyses. Thanks for trying out NutriSnap!
           </p>
           <button
             onClick={() => router.push('/signup')} // Navigate to signup page (to be created)
