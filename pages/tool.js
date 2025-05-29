@@ -142,7 +142,7 @@ export default function ToolPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (isBlocked) {
-      setError(`You've used all your free analyses. Please sign up for more! ✨`);
+      setError(`You&apos;ve used all your free analyses. Please sign up for more! ✨`);
       return;
     }
     if (!foodInput && !imageBase64) {
@@ -264,9 +264,6 @@ export default function ToolPage() {
           <h1 className="text-3xl sm:text-4xl font-bold text-green-600 mb-2 cursor-pointer" onClick={() => router.push('/')}>
             NutriSnap Tool 🔬
           </h1>
-          <p className="text-md text-slate-500">
-            Free uses remaining: {Math.max(0, MAX_FREE_USES - usageCount)}
-          </p>
         </header>
 
         <main className="w-full max-w-xl bg-white text-slate-800 p-6 sm:p-8 rounded-xl shadow-xl mb-10">

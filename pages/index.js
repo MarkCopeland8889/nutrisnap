@@ -42,7 +42,12 @@ export default function HomePage() {
     if (!deferredPrompt) {
       // This shouldn't happen if the button is visible, but as a safeguard
       console.log('Deferred prompt not available.');
-      alert("App installation is not available at this moment. Please try again later or check your browser settings.");
+      // Replaced alert with a more user-friendly notification if possible, or remove if button is always conditional
+      // For now, keeping the console log and a simple alert for non-interactive environments.
+      // In a real app, you might use a toast notification.
+      if (typeof window !== 'undefined') {
+        alert("App installation is not available at this moment. Please try again later or check your browser settings.");
+      }
       return;
     }
     
@@ -69,10 +74,8 @@ export default function HomePage() {
       <Head>
         <title>NutriSnap - AI Food Scanner & Nutrition Planner</title>
         <meta name="description" content="Set nutrition goals, get a personalized nutrition plan, and use our AI-powered food scanner. NutriSnap food scanner engine is 93.7% accurate." />
-        {/* Ensure your manifest link is in _document.js or here if preferred */}
-        {/* <link rel="manifest" href="/manifest.json" /> */}
       </Head>
-      <div className="min-h-screen bg-slate-50 text-slate-800 p-4 sm:p-6 flex flex-col items-center justify-center font-inter">
+      <div className="min-h-screen bg-slate-50 text-slate-800 p-4 sm:p-6 flex flex-col items-center justify-center font-inter relative"> {/* Added relative for potential z-indexing context if needed */}
         <header className="w-full max-w-3xl text-center mb-10 sm:mb-12">
           <h1 className="text-4xl sm:text-5xl font-bold text-green-600 mb-3">
             NutriSnap 🥗
@@ -90,22 +93,16 @@ export default function HomePage() {
             <p className="text-lg text-slate-700 mb-3">
               Set nutrition goals and get your personalized nutrition plan!
             </p>
-            {/* This is the "Download App" button that activates the PWA install prompt */}
-            {/* It will only be visible if 'showInstallButton' is true */}
-            {showInstallButton && (
-              <button
-                onClick={handleInstallClick}
-                className="w-full bg-green-500 text-white font-semibold py-3 px-5 rounded-lg shadow-md hover:bg-green-600 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 text-lg mb-4"
-              >
-                Download App 📲
-              </button>
-            )}
             {/* Fallback text if the custom button isn't shown (e.g., on iOS or if prompt not available) */}
+            {/* This text remains in its original position as the button is now floating */}
             {!showInstallButton && (
                  <p className="text-sm text-slate-500 mb-4">
                    (App can be installed via your browser's 'Add to Home Screen' option if available)
                  </p>
             )}
+             {/* Placeholder for where the button used to be, if needed for layout, or remove this div */}
+             {showInstallButton && <div className="h-[52px] mb-4"></div>}
+
           </div>
 
           <div className="relative mb-8">
@@ -139,6 +136,23 @@ export default function HomePage() {
             &copy; {new Date().getFullYear()} NutriSnap. All rights reserved.
           </p>
         </footer>
+
+        {/* Absolutely positioned PWA Install Button (Floating Action Button style) */}
+        {/* This button is only rendered if 'showInstallButton' is true */}
+        {showInstallButton && (
+          <div className="fixed bottom-6 right-6 z-50">
+            <button
+              onClick={handleInstallClick}
+              title="Install NutriSnap App" // Added title for accessibility
+              className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 transition duration-300 ease-in-out transform hover:scale-105 flex items-center text-lg"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              Install App
+            </button>
+          </div>
+        )}
       </div>
     </>
   );
