@@ -184,13 +184,13 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-green-700 mb-3">Join Thousands of Healthy Eaters!</h3>
                 <blockquote className="text-slate-600 mb-2 italic border-l-4 border-green-500 pl-4">
                   <p>
-                    "Finally, an app that makes calorie counting easy and actually insightful! And it&apos;s FREE! The AI is surprisingly accurate."
+                    &quot;Finally, an app that makes calorie counting easy and actually insightful! And it&apos;s FREE! The AI is surprisingly accurate.&quot;
                   </p>
                   <cite className="block text-slate-800 font-semibold mt-2 not-italic">- Alex M., Beta User</cite>
                 </blockquote>
                 <blockquote className="text-slate-600 mt-4 italic border-l-4 border-green-500 pl-4">
                   <p>
-                    "The ingredient warnings are a game-changer. Helping me avoid stuff I don&apos;t want in my diet."
+                    &quot;The ingredient warnings are a game-changer. Helping me avoid stuff I don&apos;t want in my diet.&quot;
                   </p>
                   <cite className="block text-slate-800 font-semibold mt-2 not-italic">- Sarah K., Health Enthusiast</cite>
                 </blockquote>
@@ -207,7 +207,7 @@ export default function HomePage() {
               Get started with FusionSpace today. Set personalized goals, use our powerful free AI tool, and embark on your journey to a healthier, more informed lifestyle.
             </p>
             <div className="p-8 bg-white rounded-xl shadow-xl inline-block">
-              <h3 className="text-2xl font-semibold text-green-700 mb-6">Get Started Now - It's Free!</h3>
+              <h3 className="text-2xl font-semibold text-green-700 mb-6">Get Started Now - It&apos;s Free!</h3>
               <div className="space-y-4 flex flex-col items-center">
                 <Link href="/tool" legacyBehavior>
                   <a className="w-full max-w-xs sm:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 text-lg">

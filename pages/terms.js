@@ -19,8 +19,8 @@ export default function TermsOfServicePage() {
           <p className="text-slate-600 mb-4">Last Updated: {new Date().toLocaleDateString()}</p>
 
           <p className="text-slate-700 mb-4">
-            Welcome to FusionSpace! These Terms of Service ("Terms") govern your use of the FusionSpace website,
-            mobile application (if applicable), and services (collectively, the "Service") provided by FusionSpace ("we," "us," or "our").
+            Welcome to FusionSpace! These Terms of Service (&quot;Terms&quot;) govern your use of the FusionSpace website,
+            mobile application (if applicable), and services (collectively, the &quot;Service&quot;) provided by FusionSpace (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;).
             By accessing or using our Service, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use our Service.
           </p>
 
