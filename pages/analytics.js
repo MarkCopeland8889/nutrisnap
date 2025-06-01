@@ -6,7 +6,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../lib/firebase'; // Adjust path if lib is elsewhere
 import Header from '../components/Header'; // Adjust path
 import Footer from '../components/Footer'; // Adjust path
-
+import { Analytics } from "@vercel/analytics/next"
 export default function AnalyticsPage() {
   const router = useRouter();
   const [currentUser, setCurrentUser] = useState(null);

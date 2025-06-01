@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import { onAuthStateChanged } from 'firebase/auth';
 import { doc, getDoc, setDoc } from 'firebase/firestore';
 import { auth, db } from '../lib/firebase';
-
+import { Analytics } from "@vercel/analytics/next"
 export default function OnboardingPage() {
   const router = useRouter();
   const [currentUser, setCurrentUser] = useState(null);

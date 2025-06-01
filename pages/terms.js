@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Header from '../components/Header'; // Assuming you want the header here too
-
+import { Analytics } from "@vercel/analytics/next"
 export default function TermsOfServicePage() {
   return (
     <>

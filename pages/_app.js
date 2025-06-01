@@ -1,5 +1,8 @@
 // pages/_app.js
+import '../src/app/globals.css'; // Or your global stylesheet
 import { useEffect } from 'react';
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next" // If you're also using Speed Insights
 // Make sure you import your global styles if you have them, e.g.:
 // import '../styles/globals.css';
 
@@ -20,7 +23,13 @@ function MyApp({ Component, pageProps }) {
     }
   }, []);
 
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Component {...pageProps} />
+      <Analytics /> {/* Standard placement */}
+      <SpeedInsights /> {/* Standard placement for Speed Insights, if used */}
+    </>
+  );
 }
 
 export default MyApp;
