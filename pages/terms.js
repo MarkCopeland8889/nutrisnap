@@ -46,7 +46,7 @@ export default function TermsOfServicePage() {
             <li>In any way that violates any applicable federal, state, local, or international law or regulation.</li>
             <li>To transmit, or procure the sending of, any advertising or promotional material without our prior written consent.</li>
             <li>To impersonate or attempt to impersonate FusionSpace, a FusionSpace employee, another user, or any other person or entity.</li>
-            <li>To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm FusionSpace or users of the Service or expose them to liability.</li>
+            <li>To engage in any other conduct that restricts or inhibits anyone&apos;s use or enjoyment of the Service, or which, as determined by us, may harm FusionSpace or users of the Service or expose them to liability.</li>
           </ul>
 
           <h2 className="text-2xl font-semibold text-slate-700 mt-6 mb-3">4. AI Analysis and Nutritional Information</h2>

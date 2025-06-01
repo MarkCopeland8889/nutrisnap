@@ -140,7 +140,7 @@ export default function HomePage() {
                   <div>
                     <h4 className="text-xl font-semibold">Personalized Goals</h4>
                     <p className="text-slate-600 mt-1">
-                      Set your targets for weight loss, maintenance, or gain, and we'll guide you with clear nutritional plans.
+                      Set your targets for weight loss, maintenance, or gain, and we&apos;ll guide you with clear nutritional plans.
                     </p>
                   </div>
                 </div>
@@ -190,7 +190,7 @@ export default function HomePage() {
                 </blockquote>
                 <blockquote className="text-slate-600 mt-4 italic border-l-4 border-green-500 pl-4">
                   <p>
-                    "The ingredient warnings are a game-changer. Helping me avoid stuff I don't want in my diet."
+                    "The ingredient warnings are a game-changer. Helping me avoid stuff I don&apos;t want in my diet."
                   </p>
                   <cite className="block text-slate-800 font-semibold mt-2 not-italic">- Sarah K., Health Enthusiast</cite>
                 </blockquote>

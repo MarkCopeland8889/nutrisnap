@@ -146,7 +146,7 @@ export default function OnboardingPage() {
         <div className="w-full max-w-lg bg-white p-8 md:p-10 rounded-xl shadow-xl">
           <div className="text-center mb-8">
             <h1 className="text-3xl font-bold text-green-600">Welcome to FusionSpace!</h1>
-            <p className="text-slate-600 mt-2">Let's set up your profile to personalize your experience.</p>
+            <p className="text-slate-600 mt-2">Let&apos;s set up your profile to personalize your experience.</p>
           </div>
 
           <form onSubmit={handleOnboardingSubmit} className="space-y-6">
