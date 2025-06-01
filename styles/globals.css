@@ -1,0 +1,118 @@
+/* Ensure these are at the very top if you have Tailwind CSS set up via PostCSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables for Theming 
+  We define light mode colors by default and override for dark mode.
+*/
+:root {
+  /* Light Theme (Default) */
+  --background-rgb: 240, 253, 244; /* Tailwind green-50 in RGB */
+  --foreground-rgb: 20, 83, 45;   /* Tailwind green-900 in RGB */
+  
+  --card-background-rgb: 255, 255, 255; /* White */
+  --card-foreground-rgb: 23, 23, 23;   /* Tailwind neutral-900 */
+
+  --primary-rgb: 16, 185, 129;     /* Tailwind emerald-500 */
+  --primary-foreground-rgb: 255, 255, 255; /* White for text on primary */
+
+  --secondary-rgb: 234, 179, 8;    /* Tailwind amber-500 (example accent) */
+  --secondary-foreground-rgb: 23, 23, 23; /* Neutral-900 for text on secondary */
+
+  --border-rgb: 229, 231, 235; /* Tailwind gray-200 */
+
+  /* Converted to use with Tailwind opacity utilities if needed, e.g., bg-background/80 */
+  --background: rgb(var(--background-rgb));
+  --foreground: rgb(var(--foreground-rgb));
+  --card-background: rgb(var(--card-background-rgb));
+  --card-foreground: rgb(var(--card-foreground-rgb));
+  --primary: rgb(var(--primary-rgb));
+  --primary-foreground: rgb(var(--primary-foreground-rgb));
+  --secondary: rgb(var(--secondary-rgb));
+  --secondary-foreground: rgb(var(--secondary-foreground-rgb));
+  --border: rgb(var(--border-rgb));
+
+  /* Font Setup - Assuming Inter is your primary sans-serif font */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Add a mono font if you use one, e.g., from a font provider or local */
+  /* --font-mono: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace; */
+
+  /* Basic transition for color modes */
+  --color-transition: color 300ms ease, background-color 300ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark Theme Overrides */
+    --background-rgb: 5, 46, 22;      /* Tailwind green-950 in RGB */
+    --foreground-rgb: 220, 252, 231;  /* Tailwind green-100 in RGB */
+
+    --card-background-rgb: 4, 78, 58; /* Tailwind green-800 or slightly darker like emerald-800 (6 78 59) */
+    --card-foreground-rgb: 220, 252, 231; /* Tailwind green-100 */
+    
+    --primary-rgb: 52, 211, 153;      /* Tailwind emerald-400 */
+    --primary-foreground-rgb: 6, 78, 59; /* Tailwind emerald-800 for text on primary-dark */
+
+    --secondary-rgb: 252, 211, 77;   /* Tailwind amber-300 (example accent for dark) */
+    --secondary-foreground-rgb: 51, 65, 85; /* Slate-700 for text on secondary-dark */
+
+    --border-rgb: 55, 65, 81; /* Tailwind gray-700 */
+  }
+}
+
+/* The @theme inline block you had previously might be from a specific Vercel template.
+  If it's working for you and helps integrate specific fonts like Geist Sans,
+  you can keep it. The CSS variables defined in :root will be available to it.
+  Example:
+  @theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-sans); // This would now use your Inter font stack
+    // --font-mono: var(--font-mono);
+  }
+*/
+
+
+/* Global element styling */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans); /* Use the CSS variable for font */
+  transition: var(--color-transition);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* Example: Add some default margin or specific font weights if desired,
+     though Tailwind classes are often preferred for this per-component. */
+  /* margin-bottom: 0.75em; */
+  /* font-weight: 600; /* Example: semibold for headings */
+}
+
+a {
+  color: var(--primary); /* Use primary accent for links */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  /* Slightly darken primary color on hover - adjust as needed */
+  color: color-mix(in srgb, var(--primary) 85%, black);
+}
+
+/* Basic focus outline for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 2px; /* Optional: match your site's border-radius */
+}
+
+/* You can add more global styles or utility patterns here if needed */
