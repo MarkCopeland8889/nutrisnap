@@ -1,5 +1,5 @@
 // pages/_app.js
-import '../src/app/globals.css'; // Or your global stylesheet
+import '../styles/globals.css';
 import { useEffect } from 'react';
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next" // If you're also using Speed Insights

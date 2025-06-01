@@ -17,7 +17,7 @@ export default function FeaturesPage() {
     },
     {
       name: "Personalized Goals & Plans",
-      description: "Set your goals for weight loss, maintenance, or muscle gain. NutriSnap provides tailored calorie and macro targets based on your profile and activity level.",
+      description: "Set your goals for weight loss, maintenance, or muscle gain. FusionSpace provides tailored calorie and macro targets based on your profile and activity level.",
       icon: "🎯"
     },
     {
@@ -32,7 +32,7 @@ export default function FeaturesPage() {
     },
     {
       name: "Progressive Web App (PWA)",
-      description: "Install NutriSnap directly to your phone or desktop for a fast, app-like experience without needing an app store.",
+      description: "Install FusionSpace directly to your phone or desktop for a fast, app-like experience without needing an app store.",
       icon: "📱"
     },
     {
@@ -50,15 +50,15 @@ export default function FeaturesPage() {
   return (
     <>
       <Head>
-        <title>Features - NutriSnap | AI Nutrition Tracking</title>
-        <meta name="description" content="Discover the powerful features of NutriSnap, your free AI-powered nutrition and calorie tracker. Instant analysis, personalized goals, and more." />
+        <title>Features - FusionSpace | AI Nutrition Tracking</title>
+        <meta name="description" content="Discover the powerful features of FusionSpace, your free AI-powered nutrition and calorie tracker. Instant analysis, personalized goals, and more." />
       </Head>
       <Header />
 
       <main className="font-inter">
         <section className="py-12 bg-slate-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <h1 className="text-4xl font-bold text-green-600 mb-4">NutriSnap Features</h1>
+            <h1 className="text-4xl font-bold text-green-600 mb-4">FusionSpace Features</h1>
             <p className="text-xl text-slate-700">
               Everything you need to understand your food, track your nutrition, and achieve your health goals – <strong className="text-green-600">all for free</strong>.
             </p>
@@ -81,9 +81,9 @@ export default function FeaturesPage() {
 
         <section className="py-16 bg-green-600 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
-            <h2 className="text-3xl font-bold mb-6">Why NutriSnap Stands Out</h2>
+            <h2 className="text-3xl font-bold mb-6">Why FusionSpace Stands Out</h2>
             <p className="text-lg mb-4">
-              Compared to expensive alternatives or complicated apps, NutriSnap offers a streamlined, AI-first approach to nutrition. 
+              Compared to expensive alternatives or complicated apps, FusionSpace offers a streamlined, AI-first approach to nutrition. 
               Our core features are robust and always free. We focus on providing accurate estimations and actionable insights.
             </p>
             <p className="text-lg">
@@ -99,7 +99,7 @@ export default function FeaturesPage() {
                     <div>
                         <h3 className="text-2xl font-semibold text-green-700 mb-3">Our Technology</h3>
                         <p className="text-slate-700 max-w-2xl mx-auto">
-                            NutriSnap leverages cutting-edge AI (Gemini 1.5 Flash) and established nutritional databases to provide its estimations. 
+                            FusionSpace leverages cutting-edge AI (Gemini 1.5 Flash) and established nutritional databases to provide its estimations. 
                             While AI provides powerful analysis, remember that all values are estimates. 
                             (Placeholder: We will add links to relevant studies or research backing our approach here.)
                         </p>

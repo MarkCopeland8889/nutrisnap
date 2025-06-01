@@ -5,10 +5,10 @@ import Link from 'next/link'; // Import Link
 import { useRouter } from 'next/router';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { doc, getDoc, collection, addDoc, serverTimestamp, query, where, getDocs, Timestamp, deleteDoc } from 'firebase/firestore';
-import { auth, db } from '../lib/firebase';
-import FoodAnalysisTool from '../components/FoodAnalysisTool';
-import Header from '../components/Header'; 
-import Footer from '../components/Footer'; 
+import { auth, db } from '../../lib/firebase';
+import FoodAnalysisTool from '../../components/FoodAnalysisTool';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 const GEMINI_API_KEY = "AIzaSyDjE6Auy8b1C89Xpb9iuIlenDhsfjbxuME"; 
 
