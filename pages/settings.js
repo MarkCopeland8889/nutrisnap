@@ -99,7 +99,7 @@ export default function SettingsPage() {
   return (
     <>
       <Head>
-        <title>Settings - NutriSnap</title>
+        <title>Settings - FusionSpace</title>
       </Head>
       <Header />
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 font-inter max-w-2xl">
@@ -125,7 +125,7 @@ export default function SettingsPage() {
               <div className="border-t pt-6">
                 <h2 className="text-xl font-semibold text-red-600 mb-2">Account Deletion</h2>
                 <p className="text-slate-600 mb-3">
-                  This will permanently delete your NutriSnap account and all associated data, including your profile, goals, and logged meals. This action cannot be undone.
+                  This will permanently delete your FusionSpace account and all associated data, including your profile, goals, and logged meals. This action cannot be undone.
                 </p>
                 <button
                   onClick={handleDeleteAccount}

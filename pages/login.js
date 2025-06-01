@@ -105,7 +105,7 @@ export default function LoginPage() {
   return (
     <>
       <Head>
-        <title>Log In - NutriSnap</title>
+        <title>Log In - FusionSpace</title>
       </Head>
 
       <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center p-4 font-inter">
@@ -115,7 +115,7 @@ export default function LoginPage() {
               className="text-3xl font-bold text-green-600 cursor-pointer"
               onClick={() => router.push('/')}
             >
-              NutriSnap 🥗
+              FusionSpace 🥗
             </h1>
             <p className="text-slate-600 mt-2">Log in to your account.</p>
           </div>

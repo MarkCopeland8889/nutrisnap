@@ -22,8 +22,8 @@ export default function ContactPage() {
   return (
     <>
       <Head>
-        <title>Contact Us - NutriSnap</title>
-        <meta name="description" content="Get in touch with the NutriSnap team. We'd love to hear from you!" />
+        <title>Contact Us - FusionSpace</title>
+        <meta name="description" content="Get in touch with the FusionSpace team. We'd love to hear from you!" />
       </Head>
       <Header />
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
             <h1 className="text-4xl font-bold text-green-600 mb-4">Contact Us</h1>
             <p className="text-xl text-slate-700">
-              Have questions, feedback, or suggestions? We'd love to hear from you!
+              Have questions, feedback, or suggestions? We&apos;d love to hear from you!
             </p>
           </div>
         </section>
@@ -42,7 +42,7 @@ export default function ContactPage() {
             {isSubmitted ? (
               <div className="p-8 bg-green-100 text-green-700 rounded-lg shadow-md text-center">
                 <h2 className="text-2xl font-semibold mb-3">Thank You!</h2>
-                <p>Your message has been received. We'll get back to you as soon as possible.</p>
+                <p>Your message has been received. We&apos;ll get back to you as soon as possible.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-xl space-y-6">
@@ -71,7 +71,7 @@ export default function ContactPage() {
               </form>
             )}
              <p className="mt-8 text-center text-slate-600 text-sm">
-                Alternatively, you can reach us at <a href="mailto:support@nutrisnap.app" className="text-green-600 hover:underline">support@nutrisnap.app</a> (Placeholder Email).
+                Alternatively, you can reach us at <a href="mailto:support@FusionSpace.app" className="text-green-600 hover:underline">support@FusionSpace.app</a> (Placeholder Email).
             </p>
           </div>
         </section>

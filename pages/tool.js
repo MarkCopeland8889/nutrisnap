@@ -27,7 +27,7 @@ export default function ToolPage() {
 
 
   useEffect(() => {
-    const storedCount = parseInt(localStorage.getItem('nutrisnapFreeUsage') || '0');
+    const storedCount = parseInt(localStorage.getItem('FusionSpaceFreeUsage') || '0');
     setUsageCount(storedCount);
     if (storedCount >= FREE_USES_LIMIT) {
       setLimitReached(true);
@@ -154,7 +154,7 @@ export default function ToolPage() {
             // Increment usage count AFTER successful analysis
             const newCount = usageCount + 1;
             setUsageCount(newCount);
-            localStorage.setItem('nutrisnapFreeUsage', newCount.toString());
+            localStorage.setItem('FusionSpaceFreeUsage', newCount.toString());
             if (newCount >= FREE_USES_LIMIT) {
                 setLimitReached(true); // Set limit reached for next attempt
             }
@@ -199,8 +199,8 @@ export default function ToolPage() {
   return (
     <>
       <Head>
-        <title>Free Nutrition Analysis Tool - NutriSnap</title>
-        <meta name="description" content="Try NutriSnap's free AI-powered tool to analyze the nutrition of your meals instantly. Limited free uses available." />
+        <title>Free Nutrition Analysis Tool - FusionSpace</title>
+        <meta name="description" content="Try FusionSpace's free AI-powered tool to analyze the nutrition of your meals instantly. Limited free uses available." />
       </Head>
       <Header /> {/* Add the header */}
 
@@ -225,7 +225,7 @@ export default function ToolPage() {
           <div className="p-8 bg-amber-100 border-l-4 border-amber-500 text-amber-700 rounded-lg shadow-lg text-center">
             <h2 className="text-2xl font-semibold mb-4">Want More Analyses?</h2>
             <p className="text-lg mb-6">
-              Sign Up to Continue Using NutriSnap, 100% free! Unlock unlimited analyses, meal tracking, personalized goals, and more.
+              Sign Up to Continue Using FusionSpace, 100% free! Unlock unlimited analyses, meal tracking, personalized goals, and more.
             </p>
             <Link href="/signup" legacyBehavior>
               <a className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg shadow-md transition duration-300 text-lg">

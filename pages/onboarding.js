@@ -140,12 +140,12 @@ export default function OnboardingPage() {
   return (
     <>
       <Head>
-        <title>Welcome to NutriSnap - Onboarding</title>
+        <title>Welcome to FusionSpace - Onboarding</title>
       </Head>
       <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center p-4 font-inter">
         <div className="w-full max-w-lg bg-white p-8 md:p-10 rounded-xl shadow-xl">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-green-600">Welcome to NutriSnap!</h1>
+            <h1 className="text-3xl font-bold text-green-600">Welcome to FusionSpace!</h1>
             <p className="text-slate-600 mt-2">Let's set up your profile to personalize your experience.</p>
           </div>
 

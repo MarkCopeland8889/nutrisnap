@@ -1,5 +1,5 @@
 // src/app/layout.js
-import './globals.css'; // Import your global styles here
+import '../../styles/globals.css'; // Import your global styles here
 import { Inter } from 'next/font/google'; // Next.js font optimization
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next";

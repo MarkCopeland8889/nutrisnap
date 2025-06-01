@@ -26,10 +26,10 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>NutriSnap - 93.5% Accurate AI Nutrition Tracker (100% Free)</title>
+        <title>FusionSpace - 93.5% Accurate AI Nutrition Tracker (100% Free)</title>
         <meta
           name="description"
-          content="NutriSnap offers effortless nutrition tracking with its 93.5% accurate AI. Snap a photo or describe your meal for instant calorie, macro, and ingredient analysis. Achieve your health goals for free!"
+          content="FusionSpace offers effortless nutrition tracking with its 93.5% accurate AI. Snap a photo or describe your meal for instant calorie, macro, and ingredient analysis. Achieve your health goals for free!"
         />
       </Head>
 
@@ -40,7 +40,7 @@ export default function HomePage() {
         <section className="bg-green-600 text-white py-20 md:py-32">
           <div className="container mx-auto px-6 text-center max-w-4xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Unlock Your Health Goals with NutriSnap
+              Unlock Your Health Goals with FusionSpace
             </h1>
             <p className="text-lg md:text-xl mb-4">
               Effortlessly track your nutrition by simply snapping a photo of your meal or describing it. Get instant, AI-powered analysis of calories, macros, and ingredients.{' '}
@@ -69,7 +69,7 @@ export default function HomePage() {
                   alert('Android App (APK) coming soon!');
                 }}
                 className="inline-flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2.5 px-6 rounded-lg shadow-md transition duration-300 text-md"
-                title="Download NutriSnap Android APK (Coming Soon)"
+                title="Download FusionSpace Android APK (Coming Soon)"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ export default function HomePage() {
         {/* How it Works Section */}
         <section className="py-16 md:py-24 bg-slate-50">
           <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h2 className="text-3xl font-bold mb-4 text-slate-800">It's As Easy As...</h2>
+            <h2 className="text-3xl font-bold mb-4 text-slate-800">It&apos;s Easy As...</h2>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="bg-white p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
                 <div className="text-5xl mb-4 text-green-500">📸</div>
@@ -115,12 +115,12 @@ export default function HomePage() {
         {/* Features Highlight Section */}
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-6 max-w-5xl">
-            <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">Why Choose NutriSnap?</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-slate-800">Why Choose FusionSpace?</h2>
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <img
                   src="/placeholder-app-image.svg"
-                  alt="NutriSnap App Interface"
+                  alt="FusionSpace App Interface"
                   className="rounded-lg shadow-xl mx-auto"
                   style={{ maxWidth: '350px', border: '1px solid #e2e8f0' }}
                 />
@@ -131,8 +131,7 @@ export default function HomePage() {
                   <div>
                     <h4 className="text-xl font-semibold">Instant & Accurate AI Analysis</h4>
                     <p className="text-slate-600 mt-1">
-                      Get detailed breakdowns (calories, protein, carbs, fats) in seconds. Our AI is tested to be{' '}
-                      <strong className="text-green-700">93.5% correct</strong> in its estimations.
+                      Get detailed breakdowns (calories, protein, carbs, fats) in seconds. 
                     </p>
                   </div>
                 </div>
@@ -176,7 +175,7 @@ export default function HomePage() {
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <h3 className="text-xl font-semibold text-green-700 mb-3">Powered by Advanced AI</h3>
                 <p className="text-slate-600 mb-2">
-                  NutriSnap utilizes state-of-the-art AI models (like Google's Gemini) combined with comprehensive nutritional databases to provide{' '}
+                  FusionSpace utilizes state-of-the-art AI models combined with comprehensive nutritional databases to provide{' '}
                   <strong className="text-green-700">highly accurate (93.5% tested correctness) estimations</strong> from your food descriptions or images.
                 </p>
                 <p className="text-slate-600 text-sm mt-2">(Placeholder: We will link to studies validating food recognition AI accuracy here.)</p>
@@ -185,7 +184,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-green-700 mb-3">Join Thousands of Healthy Eaters!</h3>
                 <blockquote className="text-slate-600 mb-2 italic border-l-4 border-green-500 pl-4">
                   <p>
-                    "Finally, an app that makes calorie counting easy and actually insightful! And it's FREE! The AI is surprisingly accurate."
+                    "Finally, an app that makes calorie counting easy and actually insightful! And it&apos;s FREE! The AI is surprisingly accurate."
                   </p>
                   <cite className="block text-slate-800 font-semibold mt-2 not-italic">- Alex M., Beta User</cite>
                 </blockquote>
@@ -205,8 +204,7 @@ export default function HomePage() {
           <div className="container mx-auto px-6 max-w-3xl">
             <h2 className="text-3xl font-bold mb-6 text-slate-800">Ready to Transform Your Nutrition?</h2>
             <p className="text-slate-600 mb-8">
-              Get started with NutriSnap today. Set personalized goals, use our powerful free AI tool (independently tested for{' '}
-              <strong className="text-green-600">93.5% correctness</strong>), and embark on your journey to a healthier, more informed lifestyle.
+              Get started with FusionSpace today. Set personalized goals, use our powerful free AI tool, and embark on your journey to a healthier, more informed lifestyle.
             </p>
             <div className="p-8 bg-white rounded-xl shadow-xl inline-block">
               <h3 className="text-2xl font-semibold text-green-700 mb-6">Get Started Now - It's Free!</h3>
@@ -227,7 +225,7 @@ export default function HomePage() {
                     <button
                       onClick={handleInstallPWA}
                       className="w-full sm:w-auto bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2.5 px-5 rounded-lg shadow-md transition duration-300 flex items-center justify-center gap-2"
-                      title="Install NutriSnap as a Web App"
+                      title="Install FusionSpace as a Web App"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +246,7 @@ export default function HomePage() {
                         alert('Android APK coming soon!');
                       }}
                       className="w-full sm:w-auto bg-slate-600 hover:bg-slate-700 text-white font-semibold py-2.5 px-5 rounded-lg shadow-md transition duration-300 flex items-center justify-center gap-2"
-                      title="Download NutriSnap Android APK (Coming Soon)"
+                      title="Download FusionSpace Android APK (Coming Soon)"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

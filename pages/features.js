@@ -108,11 +108,11 @@ export default function FeaturesPage() {
                         <h3 className="text-2xl font-semibold text-green-700 mb-3">What Our Users Say</h3>
                         <div className="grid md:grid-cols-2 gap-6 text-left">
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <p className="text-slate-600 italic">"This app is a lifesaver! So easy to just snap a pic and know what I'm eating. And it's free!"</p>
+                                <p className="text-slate-600 italic">&quot;This app is a lifesaver! So easy to just snap a pic and know what I'm eating. And it&apos;s FREE!&quot;</p>
                                 <p className="text-slate-800 font-semibold mt-2">- Jamie P.</p>
                             </div>
                             <div className="bg-white p-6 rounded-lg shadow-md">
-                                <p className="text-slate-600 italic">"The ingredient warnings helped me realize how much seed oil was in my diet. Making better choices now."</p>
+                                <p className="text-slate-600 italic">&quot;The ingredient warnings helped me realize how much seed oil was in my diet. Making better choices now.&quot;</p>
                                 <p className="text-slate-800 font-semibold mt-2">- Alex R.</p>
                             </div>
                         </div>

@@ -82,14 +82,14 @@ export default function SignupPage() {
   return (
     <>
       <Head>
-        <title>Sign Up - NutriSnap</title>
+        <title>Sign Up - FusionSpace</title>
       </Head>
       <Header /> {/* Add the header */}
       <div className="min-h-screen bg-slate-50 flex flex-col justify-center items-center p-4 font-inter">
         <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-xl">
           <div className="text-center mb-8">
             <Link href="/" legacyBehavior>
-                <a className="text-3xl font-bold text-green-600 cursor-pointer">NutriSnap 🥗</a>
+                <a className="text-3xl font-bold text-green-600 cursor-pointer">FusionSpace 🥗</a>
             </Link>
             <p className="text-slate-600 mt-2">Create your free account.</p>
           </div>

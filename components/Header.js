@@ -42,7 +42,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
               <a className="text-2xl font-bold text-green-600">
-                NutriSnap 🥗
+                FusionSpace 🥗
               </a>
             </Link>
           </div>
