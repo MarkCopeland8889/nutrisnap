@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 max-w-6xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h5 className="text-slate-200 font-semibold mb-3">NutriSnap</h5>
+            <h5 className="text-slate-200 font-semibold mb-3">FusionSpace</h5>
             <ul className="space-y-2 text-sm">
               <li><Link href="/features" legacyBehavior><a className="hover:text-green-400">Features</a></Link></li>
               <li><Link href="/#pricing" legacyBehavior><a className="hover:text-green-400">Pricing (Free!)</a></Link></li> 
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-slate-700 pt-8 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} NutriSnap. All rights reserved. Your AI Nutrition Companion.</p>
+          <p>&copy; {new Date().getFullYear()} FusionSpace. All rights reserved. Your AI Nutrition Companion.</p>
           <p className="mt-1">Remember to consult with a healthcare professional for medical or dietary advice.</p>
         </div>
       </div>
